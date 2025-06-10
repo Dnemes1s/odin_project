@@ -19,3 +19,12 @@ console.log(pi) // Will give an error saying you cant change a const
 var thing = "idk"   // Third type of variable that isnt used much anymore. Everyone mostly uses let or const
 console.log(thing)
 
+const button = document.createElement('button');
+button.textContent = 'Click Me';
+button.id = 'myButton';
+button.classList.add('my-button-class');
+button.addEventListener('click', function() {
+  alert('Button Clicked!');
+});
+document.getElementById('myContainer').appendChild(button);
+
